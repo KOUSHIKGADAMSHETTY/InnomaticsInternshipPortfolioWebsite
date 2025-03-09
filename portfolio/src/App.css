@@ -1,0 +1,488 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #f4f4f4;
+}
+
+/* Video Background */
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);  /* Adjust brightness (lower value = darker) */
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay (adjust opacity as needed) */
+  z-index: -1;
+}
+
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;  /* Pushes title to the left and menu to the right */
+  align-items:end;
+  z-index: 1000;
+}
+
+/* Navbar Title */
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar List */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+ padding: 0;
+  position: relative;
+  left: -50px; 
+}
+
+/* Navbar Items */
+.navbar ul li {
+  display: inline;
+}
+
+/* Navbar Links */
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+/* Hover Effect */
+.navbar ul li a:hover {
+  color: #00aaff;
+}
+
+
+
+/* Prevent content from hiding under navbar */
+body {
+  padding-top: 80px;
+}
+/* Hide scrollbar for all browsers */
+body {
+  overflow: hidden; /* Prevents scrolling */
+  height: 100%;
+}
+
+
+/* Semi-transparent text background for readability */
+.text-box {
+  background: rgba(0, 0, 0, 0.805);
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+/* Sections Styling */
+.section {
+  padding: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.profile {
+  text-align: center;
+  margin: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #2575fc;
+  object-fit: cover;
+}
+
+/* Tech Logos */
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.tech-logos img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-logos img:hover {
+  transform: scale(1.2);
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers the projects */
+  gap: 40px;  /* Even spacing */
+  padding: 20px;
+}
+
+.project-wrapper {
+  width: 300px;
+  text-align: center;
+}
+
+.project-card {
+  background: white;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.text-box {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.github {
+  background: #333;
+}
+
+.live {
+  background: #2575fc;
+}
+
+.github:hover {
+  background: #555;
+}
+
+.live:hover {
+  background: #1e5bcc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-wrapper {
+      width: 90%;
+  }
+
+  .project-card {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.github:hover {
+  background: #555;
+}
+
+.live:hover {
+  background: #e64a19;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
+/* About Me Section */
+
+.profile img {
+  width: 200px;  /* Increases image size */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2575fc;
+}
+
+.about-text {
+  max-width: 600px; /* Prevents text from stretching too much */
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+
+
+}
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+html, body {
+  height: 100%;
+  overflow-y: auto;  /* Allow vertical scrolling */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;  /* Hide scrollbar in IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+#skills {
+  display: flex;
+  align-items: center;  /* Aligns image and text vertically */
+  justify-content: center; /* Centers the section */
+  gap: 50px; /* Adds space between image and text */
+  padding: 50px;
+}
+
+
+.skills-text {
+  max-width: 600px; /* Prevents text from stretching too much */
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+
+
+}
+/* Flexbox for horizontal alignment */
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Space between elements */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.tech-logos {
+  display: flex;
+  gap: 15px;
+}
+
+/* Tech Logos Container */
+.left-logos,
+.right-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+/* Tech Logos */
+.tech-logos img {
+  width: 80px; /* Increased size */
+  height: 80px; /* Uniform shape */
+  object-fit: contain; /* Ensures logos fit well */
+  border-radius: 10px; /* Slight rounding for a polished look */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.tech-logos img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for a clean effect */
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .left-logos,
+  .right-logos {
+      justify-content: center;
+  }
+
+  .tech-logos img {
+      width: 70px;
+      height: 70px;
+  }
+}
+
+
+
+.text-box {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: justify;  /* Justify text */
+}
+
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;  /* Aligns image and text vertically */
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #1e5bcc;
+}
+
+
+/* General Button Styling */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+/* GitHub Button - Dark Gray */
+.github {
+  background: #333; /* Dark color for GitHub */
+}
+
+.github:hover {
+  background: #555; /* Lighter gray on hover */
+}
+
+/* Live Demo Button - Blue */
+.live {
+  background: #2575fc; /* Blue for Live Demo */
+}
+
+.live:hover {
+  background: #1e5bcc; /* Darker blue on hover */
+}

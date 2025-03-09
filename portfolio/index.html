@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline id="video-bg">
+        <div class="video-overlay"></div>
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+    
+    <nav class="navbar">
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="section">
+        <div class="home-container">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Photo">
+            </div>
+            <div class="intro-text text-box">
+                <h2>Welcome to My Portfolio</h2>
+                <p id="typing-text"></p>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="profile">
+            <img src="code.jpg" alt="Profile Photo">
+        </div>
+        <div class="about-container">
+
+             <div class="about-text">
+                    <h2>About Me</h2>
+                 <p id="typing-text-1"></p>
+               </div>               
+        </div>
+    </section>
+    
+    <section id="skills">
+      
+    
+        <div class="skills-container">
+            <!-- Left Logos -->
+            <div class="tech-logos left-logos">
+                <img src="html.png" alt="HTML Logo">
+                <img src="css.png" alt="CSS Logo">
+                <img src="js.png" alt="JavaScript Logo">
+
+            </div>
+    
+            <div class="skills-text">
+                <h2 class="text-box">My Skills</h2>
+                <p id="typing-text-2"></p>
+            </div>
+    
+            <!-- Right Logos -->
+            <div class="tech-logos right-logos">
+                <img src="react.png" alt="React Logo">
+                <img src="express.png" alt="express Logo">
+                <img src="mongo.png" alt="mongo Logo">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects" class="section">
+        <h2 class="text-box">My Projects</h2>
+        <div class="projects-container">
+            
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <img src="shop.png" alt="Project 1">
+                </div>
+                <h3 class="text-box">Shop-Ease</h3>
+                <p class="text-box">Simple e-commerce website for easy browsing, adding to cart, and secure purchases. It offers a smooth and user-friendly shopping experience.</p>
+                <div class="buttons">
+                    <a href="https://github.com/KOUSHIKGADAMSHETTY/InnomaticsInternshipShoppingmart" class="btn github">GitHub Source</a>
+                    <a href="https://koushikgadamshetty.github.io/InnomaticsInternshipShoppingmart/" class="btn live">Live Demo</a>
+                </div>
+            </div>
+    
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <img src="todo.png" alt="Project 2">
+                </div>
+                <h3 class="text-box">To-Do List</h3>
+                <p class="text-box">A simple to-do list web app that helps you add, edit, and delete tasks efficiently. Stay organized and track your daily tasks with ease!</p>
+                <div class="buttons">
+                    <a href="https://github.com/KOUSHIKGADAMSHETTY/InnomaticsInternshipToDoList" class="btn github">GitHub Source</a>
+                    <a href="https://koushikgadamshetty.github.io/InnomaticsInternshipTaskToDoList/" class="btn live">Live Demo</a>
+                </div>
+            </div>
+    
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <img src="java.jpg" alt="Project 3">
+                </div>
+                <h3 class="text-box">JavaScript Functions</h3>
+                <p class="text-box">This web site uses JavaScript functions to solve common problems like form validation, calculations, and dynamic content updates.</p>
+                <div class="buttons">
+                    <a href="https://github.com/KOUSHIKGADAMSHETTY/InnomaticsInternshipJS-Task" class="btn github">GitHub Source</a>
+                    <a href="https://koushikgadamshetty.github.io/InnomaticsInternshipJS-Task/" class="btn live">Live Demo</a>
+                </div>
+            </div>
+    
+            <div class="project-wrapper">
+                <div class="project-card">
+                    <img src="pbt.jpg" alt="Project 4">
+                </div>
+                <h3 class="text-box">Personal-Budget-Tracker</h3>
+                <p class="text-box">A personal budget tracker helps you manage your income and expenses efficiently. It allows you to track spending, set savings goals, and stay financially organized.</p>
+                <div class="buttons">
+                    <a href="https://github.com/KOUSHIKGADAMSHETTY/InnomaticsInternshipPersonalBudgetTracker" class="btn github">GitHub Source</a>
+                    <a href="https://koushikgadamshetty.github.io/InnomaticsInternshipPersonalBudgetTracker/" class="btn live">Live Demo</a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <section id="contact" class="section">
+        <h2 class="text-box">Contact Me</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+        
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        
+        <p class="text-box">Email: <a href="gadamshettykoushik@gmail.com">gadamshettykoushik@gmail.com</a></p>
+        <p class="text-box">LinkedIn: <a href="https://www.linkedin.com/in/koushik-gadamshetty-931ba234a/">https://www.linkedin.com/in/koushik-gadamshetty-931ba234a/</a></p>
+        <p class="text-box">GitHub: <a href="https://github.com/KOUSHIKGADAMSHETTY">https://github.com/KOUSHIKGADAMSHETTY</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
